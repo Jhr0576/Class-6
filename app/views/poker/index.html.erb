@@ -1,0 +1,15 @@
+
+deck = []
+for rank in ranks
+  for suit in suits
+    card = "#{rank} of #{suit}"
+    deck.push(card)
+  end
+end
+
+shuffled_deck = deck.shuffle
+hand = shuffled_deck[0,5]
+
+for card in hand
+  puts card
+end
